@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     background-color: #F4F4F2;
     border-bottom: 1px solid gray;
-    height: 8vh;
+    height: 65px;
 }
 
 /* Profile */
@@ -92,3 +92,29 @@ body {
 
 
 /*--- End Navbar ---*/
+
+/* Card */
+
+.main-card {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 16px;
+    margin: 16px;
+
+    max-width: 300px;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    background-color: #F4F4F2;
+    transition: .3s ease;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+}
