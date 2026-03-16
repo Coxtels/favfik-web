@@ -7,118 +7,56 @@ html {
 body {
     font-family: arial, sans-serif;
     background-color: #F4F4F2;
+    box-sizing: border-box;
 }
 
-.container {
+.nav {
+    width: 72px;
+    height: 100vh;
+    border-right: 1px solid #222831;
+
     display: flex;
     flex-direction: column;
-}
-
-
-/*--- Navbar ---*/
-
-.container-navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: #F4F4F2;
-    border-bottom: 1px solid gray;
-    height: 65px;
-}
-
-/* Profile */
-
-.container-profile {
-    display: flex;
     align-items: center;
-    padding: 20px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
-.profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    display: block; /* Pastikan gambar berperilaku sebagai blok untuk mencegah spasi ekstra */
-}
+.top-icon {
 
-
-/* Menu */
-
-.container-menu {
     display: flex;
+    flex-direction: column;
     align-items: center;
-}
-
-.ul-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-.li-menu {
-    font-size: 25px;
-    list-style-type: none;
-    padding: 10px;
-    margin: 20px;
-}
-
-.li-menu:hover {
-    background-color: #E8E8E8;
-    /* transition: .5s ease-in-out; untuk transisi ketika dihover*/ 
-    border-radius: 10px;
-}
-
-.a-menu {
-    color: black;
-    text-decoration: none;
-}
-
-
-/* Search-bar */
-
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.search-bar input {
-    padding: 10px 10px;
-    border: none;
-    border-radius: 24px;
-    font-size: 16px;
-}
-
-
-/*--- End Navbar ---*/
-
-/* Card */
-
-.main-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    max-width: 1150px;
-    margin: 0 auto;
     
 }
 
-.card {
-    padding: 16px;
-    margin: 16px;
+.bottom-icon {
 
+    margin-top: auto;
+
+}
+
+.nav-icon {
+    margin: 10px auto;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-
-    border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    background-color: #F4F4F2;
-    transition: .3s ease;
 }
 
-.card-image {
-    width: 100px;
-    height: 100px;
+.nav-main-icon-img {
+    width: 40px;
 }
+
+.nav-icon-img {
+    margin: auto;
+    width: 24px;
+}
+
+
+
